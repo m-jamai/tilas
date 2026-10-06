@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search | TILAS</title>
+<meta name="description" content="Search every TILAS story by name, place, subject or decade.">
+<meta property="og:site_name" content="TILAS">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Search | TILAS">
+<meta property="og:description" content="Search every TILAS story by name, place, subject or decade.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Noto+Sans+Tifinagh&amp;display=swap">
+<link rel="stylesheet" href="assets/css/tilas.css">
+</head>
+<body data-root="">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap masthead masthead--compact">
+<div class="brand-title"><a class="brand" href="index.html"><span class="brand-latin">TILAS</span><span class="brand-tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span></a></div>
+<a class="icon-btn" href="search.html" aria-label="Search TILAS" aria-current="page"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></a>
+</div>
+<div class="wrap">
+<nav class="nav" aria-label="Sections">
+<div>
+<a href="sections/human.html">Human</a>
+<a href="sections/places.html">Places</a>
+<a href="sections/culture.html">Culture</a>
+<a href="sections/society.html">Society</a>
+</div>
+<div>
+<a href="share.html">Share</a>
+<a href="about.html">About</a>
+</div>
+</nav>
+</div>
+</header>
+<main id="main" class="wrap">
+<header class="page-head">
+<h1 class="page-title">Search</h1>
+<p class="page-intro">Look for a name, a city, a craft or a decade.</p>
+</header>
+<form class="search-bar" role="search" action="search.html" method="get" data-search-form>
+<label class="visually-hidden" for="q">Search TILAS</label>
+<input id="q" name="q" type="search" placeholder="A name, a city, a decade" autocomplete="off" data-query>
+<button class="btn" type="submit">Search</button>
+</form>
+<p class="search-status" data-status aria-live="polite"></p>
+<ul class="list" data-list="search">
+<li class="empty">Loading stories…</li>
+</ul>
+<noscript><p class="empty">Search needs JavaScript to work.</p></noscript>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-inner">
+<div class="footer-brand">
+<p class="brand brand--sm"><span class="brand-latin">TILAS</span><span class="brand-tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span></p>
+<p class="footer-text">People, places, culture and society. Past and present. From Morocco, through Africa, to the world.</p>
+</div>
+<nav class="footer-nav" aria-label="Footer">
+<a href="about.html">About</a>
+<a href="share.html">Share</a>
+<a href="search.html">Search</a>
+</nav>
+<p class="copy">© 2026 TILAS</p>
+</div>
+</div>
+</footer>
+<script src="assets/js/tilas.js" defer></script>
+</body>
+</html>

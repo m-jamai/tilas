@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Share something for the archive | TILAS</title>
+<meta name="description" content="Send TILAS a photograph, a cassette, a letter, a recording or a memory of a place.">
+<meta property="og:site_name" content="TILAS">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Share something for the archive | TILAS">
+<meta property="og:description" content="Send TILAS a photograph, a cassette, a letter, a recording or a memory of a place.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Noto+Sans+Tifinagh&amp;display=swap">
+<link rel="stylesheet" href="assets/css/tilas.css">
+</head>
+<body data-root="">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="wrap masthead masthead--compact">
+<div class="brand-title"><a class="brand" href="index.html"><span class="brand-latin">TILAS</span><span class="brand-tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span></a></div>
+<a class="icon-btn" href="search.html" aria-label="Search TILAS"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></a>
+</div>
+<div class="wrap">
+<nav class="nav" aria-label="Sections">
+<div>
+<a href="sections/human.html">Human</a>
+<a href="sections/places.html">Places</a>
+<a href="sections/culture.html">Culture</a>
+<a href="sections/society.html">Society</a>
+</div>
+<div>
+<a href="share.html" aria-current="page">Share</a>
+<a href="about.html">About</a>
+</div>
+</nav>
+</div>
+</header>
+<main id="main" class="wrap">
+<header class="page-head">
+<h1 class="page-title">Share something for the archive</h1>
+<p class="page-intro">A photograph, a cassette, a letter, a recording, a memory of a place. If you hold a piece of a story, send it to TILAS with a few words about where it comes from.</p>
+</header>
+<!-- GitHub Pages cannot receive form data on its own.
+     Replace the action URL below with the endpoint of a form service (see README). -->
+<form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="post" enctype="multipart/form-data">
+<div class="row">
+<div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+<div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+</div>
+<div class="field">
+<label for="what">What are you sharing?</label>
+<textarea id="what" name="message" rows="6" aria-describedby="what-hint" required></textarea>
+<p class="hint" id="what-hint">What it is, where and when it comes from, who is in it.</p>
+</div>
+<div class="field">
+<label for="file">Add a photo, scan or recording <span class="hint">(optional)</span></label>
+<input id="file" name="attachment" type="file" accept="image/*,audio/*,application/pdf">
+</div>
+<label class="check"><input type="checkbox" name="rights" value="yes" required><span>I have the right to share this material.</span></label>
+<div><button class="btn" type="submit">Send to TILAS</button></div>
+</form>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-inner">
+<div class="footer-brand">
+<p class="brand brand--sm"><span class="brand-latin">TILAS</span><span class="brand-tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span></p>
+<p class="footer-text">People, places, culture and society. Past and present. From Morocco, through Africa, to the world.</p>
+</div>
+<nav class="footer-nav" aria-label="Footer">
+<a href="about.html">About</a>
+<a href="share.html">Share</a>
+<a href="search.html">Search</a>
+</nav>
+<p class="copy">© 2026 TILAS</p>
+</div>
+</div>
+</footer>
+</body>
+</html>

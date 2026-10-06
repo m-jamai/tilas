@@ -1,0 +1,46 @@
+[
+  {
+    "title": "The Voices That Changed a Generation",
+    "dek": "In 1970s Casablanca, a handful of young groups traded the radio orchestra for the banjo and the bendir, and sang in the language of the street.",
+    "section": "Culture",
+    "path": ["Africa", "Music", "Morocco", "Casablanca", "1970s"],
+    "url": "articles/the-voices-that-changed-a-generation.html",
+    "date": "2026-10-06",
+    "minutes": 22,
+    "image": "",
+    "tags": ["Hay Mohammadi", "darija", "gnawa", "melhoun", "banjo", "bendir", "guembri", "radio", "cassette"]
+  },
+  {
+    "title": "The Geometry Inside a Zellige Star",
+    "dek": "Before a single tile is cut, the pattern is a drawing: one circle, sixteen divisions, a few exact lines.",
+    "section": "Culture",
+    "path": ["Morocco", "Crafts", "Zellige", "Geometry"],
+    "url": "articles/the-geometry-inside-a-zellige-star.html",
+    "date": "2026-10-05",
+    "minutes": 10,
+    "image": "assets/img/zellige-16.svg",
+    "tags": ["zellige", "geometry", "mathematics", "science", "Fes", "craft", "tiles", "star"]
+  },
+  {
+    "title": "The Scientist Who Refused to Be Forgotten",
+    "dek": "She did foundational work, then disappeared from the record. A career pieced back together from letters and lab notes.",
+    "section": "Human",
+    "path": ["Maghreb", "Science", "Rabat", "1950s"],
+    "url": "articles/the-scientist-who-refused-to-be-forgotten.html",
+    "date": "2026-10-02",
+    "minutes": 19,
+    "image": "",
+    "tags": ["science", "research", "women", "letters"]
+  },
+  {
+    "title": "Who Leaves, Who Stays",
+    "dek": "Young graduates across North Africa are weighing the same question. We asked them how they decide.",
+    "section": "Society",
+    "path": ["Maghreb", "Youth", "Migration", "Now"],
+    "url": "articles/who-leaves-who-stays.html",
+    "date": "2026-09-29",
+    "minutes": 12,
+    "image": "",
+    "tags": ["migration", "youth", "graduates", "work", "education"]
+  }
+]
