@@ -73,10 +73,11 @@ GitHub Pages only serves files: it cannot receive form submissions. To receive w
 
 ## Change the look
 
-Open `assets/css/tilas.css`. The colors and fonts are at the top, under `:root`:
+Open `assets/css/tilas.css`. Colors and fonts are at the top, under `:root`.
 
-- `--accent` is the purple of the share band and pull quotes.
-- Fonts are Archivo (headlines), Newsreader (reading text) and Noto Sans Tifinagh (ⵜⵉⵍⴰⵙ), loaded from Google Fonts in each page's `<head>`.
+- Text uses the system font: San Francisco on Apple devices, Segoe UI on Windows, Roboto on Android. Nothing to load, so pages are fast.
+- Only the Tifinagh name (ⵜⵉⵍⴰⵙ) loads a web font: Noto Sans Tifinagh, from Google Fonts.
+- Black, white and one light grey (`--panel`) for panels and image backgrounds.
 
 ## Before launch
 

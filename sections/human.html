@@ -4,36 +4,36 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Human | TILAS</title>
-<meta name="description" content="People, profiles and interviews. Artists, musicians, writers, scientists, architects, thinkers, forgotten figures and emerging creators.">
+<meta name="description" content="People, profiles and interviews.">
 <meta property="og:site_name" content="TILAS">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Human | TILAS">
-<meta property="og:description" content="People, profiles and interviews. Artists, musicians, writers, scientists, architects, thinkers, forgotten figures and emerging creators.">
+<meta property="og:description" content="People, profiles and interviews.">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Noto+Sans+Tifinagh&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tifinagh&amp;display=swap">
 <link rel="stylesheet" href="../assets/css/tilas.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body data-root="../">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
-<div class="wrap masthead masthead--compact">
-<div class="brand-title"><a class="brand" href="../index.html"><span class="brand-latin">TILAS</span><span class="brand-tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span></a></div>
-<a class="icon-btn" href="../search.html" aria-label="Search TILAS"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></a>
-</div>
-<div class="wrap">
-<nav class="nav" aria-label="Sections">
-<div>
+<div class="wrap bar">
+<a class="brand" href="../index.html"><span class="brand-tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span><span class="brand-latin">TILAS</span></a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>Menu</button>
+<nav class="nav" id="site-nav" aria-label="Main">
+<div class="nav-group">
 <a href="../sections/human.html" aria-current="page">Human</a>
 <a href="../sections/places.html">Places</a>
 <a href="../sections/culture.html">Culture</a>
 <a href="../sections/society.html">Society</a>
 </div>
-<div>
+<div class="nav-group">
 <a href="../share.html">Share</a>
 <a href="../about.html">About</a>
+<a href="../search.html">Search</a>
 </div>
 </nav>
 </div>
@@ -41,27 +41,23 @@
 <main id="main" class="wrap">
 <header class="page-head">
 <h1 class="page-title">Human</h1>
-<p class="page-intro">People, profiles and interviews. Artists, musicians, writers, scientists, architects, thinkers, forgotten figures and emerging creators.</p>
+<p class="page-intro">People, profiles and interviews.</p>
 </header>
-<ul class="list" data-list="Human" data-empty="Human stories will appear here as they are published.">
-<li class="empty">Loading stories…</li>
+<section class="block" aria-label="Human stories">
+<ul class="grid" data-list="Human" data-empty="No Human stories yet.">
+<li class="empty">Loading…</li>
 </ul>
-<noscript><p class="empty">This list needs JavaScript to load.</p></noscript>
+<noscript><p class="empty">This list needs JavaScript.</p></noscript>
+</section>
 </main>
 <footer class="site-footer">
-<div class="wrap">
-<div class="footer-inner">
-<div class="footer-brand">
-<p class="brand brand--sm"><span class="brand-latin">TILAS</span><span class="brand-tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span></p>
-<p class="footer-text">People, places, culture and society. Past and present. From Morocco, through Africa, to the world.</p>
-</div>
+<div class="wrap footer-inner">
 <nav class="footer-nav" aria-label="Footer">
 <a href="../about.html">About</a>
 <a href="../share.html">Share</a>
 <a href="../search.html">Search</a>
 </nav>
-<p class="copy">© 2026 TILAS</p>
-</div>
+<p class="copy">© 2026 TILAS <span lang="zgh" style="font-family: var(--tfng)">ⵜⵉⵍⴰⵙ</span></p>
 </div>
 </footer>
 <script src="../assets/js/tilas.js" defer></script>

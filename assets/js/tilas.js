@@ -1,7 +1,19 @@
-/* TILAS — builds section lists and search results from assets/data/articles.json.
-   Only runs on pages that contain an element with data-list. */
+/* TILAS — small scripts: mobile menu, section lists and search. */
 (function () {
   "use strict";
+
+  /* Mobile menu */
+  var btn = document.querySelector("[data-menu-button]");
+  var nav = document.getElementById("site-nav");
+  if (btn && nav) {
+    btn.addEventListener("click", function () {
+      var open = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", String(!open));
+      nav.classList.toggle("is-open", !open);
+    });
+  }
+
+  /* Lists: section pages and search read assets/data/articles.json */
   var list = document.querySelector("[data-list]");
   if (!list) return;
 
@@ -18,34 +30,22 @@
     return n;
   }
 
-  function card(a) {
-    var li = el("li", "list-item");
+  function tile(a) {
+    var li = el("li");
+    var link = el("a", "tile-link");
+    link.href = root + a.url;
+    var media = el("div", a.image ? "tile-media drawing" : "tile-media ph");
     if (a.image) {
-      var thumb = el("div", "list-thumb drawing");
       var img = el("img");
       img.src = root + a.image;
       img.alt = "";
       img.loading = "lazy";
-      thumb.appendChild(img);
-      li.appendChild(thumb);
+      media.appendChild(img);
     }
-    var body = el("div", "list-body");
-    var path = el("p", "path");
-    (a.path || []).forEach(function (step) { path.appendChild(el("span", "", step)); });
-    body.appendChild(path);
-    var h = el("h2", "list-title");
-    var link = el("a", "", a.title);
-    link.href = root + a.url;
-    h.appendChild(link);
-    body.appendChild(h);
-    if (a.dek) body.appendChild(el("p", "list-dek", a.dek));
-    var meta = el("p", "meta");
-    var sec = el("a", "", a.section);
-    sec.href = root + "sections/" + a.section.toLowerCase() + ".html";
-    meta.appendChild(sec);
-    if (a.minutes) meta.appendChild(el("span", "", a.minutes + " min read"));
-    body.appendChild(meta);
-    li.appendChild(body);
+    link.appendChild(media);
+    link.appendChild(el("p", "label", a.section));
+    link.appendChild(el("h2", "tile-title", a.title));
+    li.appendChild(link);
     return li;
   }
 
@@ -55,7 +55,7 @@
       list.appendChild(el("li", "empty", emptyText));
       return;
     }
-    items.forEach(function (a) { list.appendChild(card(a)); });
+    items.forEach(function (a) { list.appendChild(tile(a)); });
   }
 
   function normalize(s) {
@@ -69,7 +69,7 @@
 
       if (mode !== "search") {
         render(all.filter(function (a) { return a.section === mode; }),
-          list.getAttribute("data-empty") || "No stories here yet.");
+          list.getAttribute("data-empty") || "No stories yet.");
         return;
       }
 
@@ -83,8 +83,8 @@
         var hits = all.filter(function (a, i) {
           return words.every(function (w) { return index[i].indexOf(w) !== -1; });
         });
-        render(hits, "Nothing matches \u201C" + raw + "\u201D. Try a name, a city or a decade.");
-        status.textContent = (raw ? "" : "All stories: ") + (hits.length === 1 ? "1 story" : hits.length + " stories");
+        render(hits, "No results for \u201C" + raw + "\u201D.");
+        status.textContent = hits.length === 1 ? "1 story" : hits.length + " stories";
       }
 
       var q = new URLSearchParams(location.search).get("q");
@@ -98,6 +98,6 @@
       run();
     })
     .catch(function () {
-      render([], "Stories could not be loaded. If you opened the file directly from your computer, start a local server (see README).");
+      render([], "Stories could not be loaded. To preview on your computer, start a local server (see README).");
     });
 })();

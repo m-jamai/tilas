@@ -1,70 +1,68 @@
 <!doctype html>
 <!--
   TILAS ARTICLE TEMPLATE
-  1. Copy this file into the /articles/ folder. Name it after the title: lowercase, hyphens (my-new-story.html).
+  1. Copy this file into /articles/ and rename it: lowercase, hyphens (my-new-story.html).
   2. Replace every [bracket]. Delete the optional blocks you don't need.
-  3. Add the story to assets/data/articles.json so it appears in its section and in search.
-  4. To feature it on the homepage, edit index.html by hand.
+  3. Add the story to assets/data/articles.json so it shows in its section and in search.
+  4. To feature it on the homepage, edit index.html.
 -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>[Title] | TILAS</title>
-<meta name="description" content="[One-sentence introduction]">
+<meta name="description" content="[One-line summary]">
 <meta property="og:site_name" content="TILAS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Title] | TILAS">
-<meta property="og:description" content="[One-sentence introduction]">
+<meta property="og:description" content="[One-line summary]">
 <meta name="twitter:card" content="summary">
 <meta name="robots" content="noindex">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Noto+Sans+Tifinagh&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tifinagh&amp;display=swap">
 <link rel="stylesheet" href="../assets/css/tilas.css">
+<script>document.documentElement.classList.add("js")</script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"[Title]","description":"[One-sentence introduction]","datePublished":"YYYY-MM-DD","articleSection":"[Section]","inLanguage":"en","publisher":{"@type":"Organization","name":"TILAS"}}
+{"@context":"https://schema.org","@type":"Article","headline":"[Title]","description":"[One-line summary]","datePublished":"YYYY-MM-DD","articleSection":"[Section]","inLanguage":"en","publisher":{"@type":"Organization","name":"TILAS"}}
 </script>
 </head>
 <body data-root="../">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
-<div class="wrap masthead masthead--compact">
-<div class="brand-title"><a class="brand" href="../index.html"><span class="brand-latin">TILAS</span><span class="brand-tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span></a></div>
-<a class="icon-btn" href="../search.html" aria-label="Search TILAS"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></a>
-</div>
-<div class="wrap">
-<nav class="nav" aria-label="Sections">
-<div>
+<div class="wrap bar">
+<a class="brand" href="../index.html"><span class="brand-tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span><span class="brand-latin">TILAS</span></a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>Menu</button>
+<nav class="nav" id="site-nav" aria-label="Main">
+<div class="nav-group">
 <a href="../sections/human.html">Human</a>
 <a href="../sections/places.html">Places</a>
 <a href="../sections/culture.html">Culture</a>
 <a href="../sections/society.html">Society</a>
 </div>
-<div>
+<div class="nav-group">
 <a href="../share.html">Share</a>
 <a href="../about.html">About</a>
+<a href="../search.html">Search</a>
 </div>
 </nav>
 </div>
 </header>
-<main id="main">
-<article class="article">
-
-<!-- Path: from the big subject to the story. 3 to 5 steps. -->
-<p class="path"><span>[Big subject]</span><span>[Theme]</span><span>[Place]</span><span>[Period]</span></p>
-
+<main id="main" class="wrap">
+<article>
+<header class="article-head">
+<!-- From the big subject to the story, 3 to 5 steps -->
+<p class="crumbs"><span>[Big subject]</span><span>[Theme]</span><span>[Place]</span><span>[Period]</span></p>
 <h1 class="article-title">[Title]</h1>
-<p class="article-dek">[One-sentence introduction]</p>
-
+<p class="article-sub">[One-line summary]</p>
 <!-- Section: Human, Places, Culture or Society -->
-<p class="meta"><a href="../sections/[section].html">[Section]</a><span class="byline">By [Author name]</span><time datetime="YYYY-MM-DD">[D Month YYYY]</time><span>[N] min read</span></p>
+<p class="article-meta"><a href="../sections/[section].html">[Section]</a><span>[Author name]</span><time datetime="YYYY-MM-DD">[D Month YYYY]</time><span>[N] min read</span></p>
+</header>
 
-<!-- Hero image. Put the file in assets/img/ -->
 <figure class="hero">
-<img src="../assets/img/[image].jpg" alt="[Describe the image]" width="1600" height="1067">
-<figcaption>[Caption. Photograph: credit.]</figcaption>
+<img class="hero-media" src="../assets/img/[image].jpg" alt="[Describe the image]" width="1920" height="1080" style="width: 100%; object-fit: cover">
+<figcaption>[Caption and credit]</figcaption>
 </figure>
 
 <div class="prose">
@@ -72,8 +70,8 @@
 <p>[Paragraph]</p>
 </div>
 
-<!-- Optional: pull quote (a line taken from the story) -->
-<blockquote class="pull">[A line from the story]</blockquote>
+<!-- Optional: quote -->
+<blockquote class="quote">[A line from the story]</blockquote>
 
 <!-- Optional: image inside the text -->
 <figure class="figure">
@@ -81,49 +79,37 @@
 <figcaption>[Caption]</figcaption>
 </figure>
 
-<div class="prose">
-<p>[Paragraph]</p>
-</div>
-
 <!-- Optional: timeline -->
-<section class="timeline" aria-labelledby="tl-title">
-<h2 class="h-block" id="tl-title">[Timeline title]</h2>
+<section class="facts" aria-labelledby="facts-title">
+<h2 id="facts-title">Timeline</h2>
 <ol>
-<li><span class="when">[Year]</span><span class="what">[What happened]</span></li>
-<li><span class="when">[Year]</span><span class="what">[What happened]</span></li>
+<li><span class="when">[Year]</span><span>[What happened]</span></li>
+<li><span class="when">[Year]</span><span>[What happened]</span></li>
 </ol>
 </section>
+</article>
 
-<section class="next" aria-labelledby="next-title">
-<h2 id="next-title">Read next</h2>
-<ul class="next-list">
-<li class="next-item">
-<div class="next-thumb ph"></div>
-<div>
-<h3 class="next-title"><a href="[other-story].html">[Other story title]</a></h3>
-<p class="meta"><span>[Section], [N] min</span></p>
-</div>
-</li>
+<section class="block article-end" aria-labelledby="next">
+<div class="block-head"><h2 class="block-title" id="next">Read next</h2></div>
+<ul class="grid">
+<li><a class="tile-link" href="[other-story].html">
+<div class="tile-media ph"></div>
+<p class="label">[Section]</p>
+<h3 class="tile-title">[Other story title]</h3>
+</a></li>
 </ul>
 </section>
-
-</article>
 </main>
 <footer class="site-footer">
-<div class="wrap">
-<div class="footer-inner">
-<div class="footer-brand">
-<p class="brand brand--sm"><span class="brand-latin">TILAS</span><span class="brand-tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span></p>
-<p class="footer-text">People, places, culture and society. Past and present. From Morocco, through Africa, to the world.</p>
-</div>
+<div class="wrap footer-inner">
 <nav class="footer-nav" aria-label="Footer">
 <a href="../about.html">About</a>
 <a href="../share.html">Share</a>
 <a href="../search.html">Search</a>
 </nav>
-<p class="copy">© 2026 TILAS</p>
-</div>
+<p class="copy">© 2026 TILAS <span lang="zgh" style="font-family: var(--tfng)">ⵜⵉⵍⴰⵙ</span></p>
 </div>
 </footer>
+<script src="../assets/js/tilas.js" defer></script>
 </body>
 </html>
