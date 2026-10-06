@@ -1,0 +1,124 @@
+[
+  {
+    "title": "الأصوات التي غيّرت جيلاً",
+    "sub": "الدار البيضاء في السبعينيات، والمجموعات التي غنّت بلغة الشارع.",
+    "section": "culture",
+    "label": "الثقافة",
+    "path": [
+      "أفريقيا",
+      "موسيقى",
+      "المغرب",
+      "الدار البيضاء",
+      "السبعينيات"
+    ],
+    "url": "ar/articles/the-voices-that-changed-a-generation.html",
+    "date": "2026-10-06",
+    "minutes": 22,
+    "image": "",
+    "tags": [
+      "Hay Mohammadi",
+      "darija",
+      "gnawa",
+      "melhoun",
+      "banjo",
+      "bendir",
+      "guembri",
+      "radio",
+      "cassette",
+      "الحي المحمدي",
+      "الدارجة",
+      "كناوة",
+      "الملحون",
+      "البندير",
+      "الكمبري",
+      "كاسيت"
+    ]
+  },
+  {
+    "title": "الهندسة داخل نجمة الزليج",
+    "sub": "دائرة واحدة، ستة عشر قسماً، وبضعة خطوط دقيقة. كيف تحوّل حرفةٌ الرياضياتِ إلى جدار.",
+    "section": "culture",
+    "label": "الثقافة",
+    "path": [
+      "المغرب",
+      "حِرَف",
+      "زليج",
+      "هندسة"
+    ],
+    "url": "ar/articles/the-geometry-inside-a-zellige-star.html",
+    "date": "2026-10-05",
+    "minutes": 10,
+    "image": "assets/img/zellige-16.svg",
+    "tags": [
+      "zellige",
+      "geometry",
+      "mathematics",
+      "science",
+      "Fes",
+      "craft",
+      "tiles",
+      "star",
+      "زليج",
+      "هندسة",
+      "رياضيات",
+      "علوم",
+      "فاس",
+      "حرفة",
+      "نجمة"
+    ]
+  },
+  {
+    "title": "العالِمة التي رفضت أن تُنسى",
+    "sub": "قامت بعمل تأسيسي، ثم اختفت من السجلّ.",
+    "section": "human",
+    "label": "الإنسان",
+    "path": [
+      "المغرب الكبير",
+      "علوم",
+      "الرباط",
+      "الخمسينيات"
+    ],
+    "url": "ar/articles/the-scientist-who-refused-to-be-forgotten.html",
+    "date": "2026-10-02",
+    "minutes": 19,
+    "image": "",
+    "tags": [
+      "science",
+      "research",
+      "women",
+      "letters",
+      "علوم",
+      "بحث",
+      "نساء",
+      "رسائل"
+    ]
+  },
+  {
+    "title": "من يرحل، ومن يبقى",
+    "sub": "شباب خريجون في شمال أفريقيا أمام السؤال نفسه.",
+    "section": "society",
+    "label": "المجتمع",
+    "path": [
+      "المغرب الكبير",
+      "شباب",
+      "هجرة",
+      "اليوم"
+    ],
+    "url": "ar/articles/who-leaves-who-stays.html",
+    "date": "2026-09-29",
+    "minutes": 12,
+    "image": "",
+    "tags": [
+      "migration",
+      "youth",
+      "graduates",
+      "work",
+      "education",
+      "هجرة",
+      "شباب",
+      "خريجون",
+      "عمل",
+      "تعليم"
+    ]
+  }
+]

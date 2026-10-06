@@ -1,86 +1,83 @@
 # TILAS ⵜⵉⵍⴰⵙ
 
 A contemporary cultural magazine rooted in Morocco, open to Africa and the world.
-
-Plain HTML, CSS and a little JavaScript. No build step, no framework. Works on GitHub Pages as is.
+English and Arabic. Plain HTML, CSS and a little JavaScript. No build step. Works on GitHub Pages as is.
 
 ## What's inside
 
 ```
-index.html              Homepage (edit by hand: you choose what is featured)
-about.html              About TILAS
-share.html              "Share something for the archive" form
-search.html             Search across all stories
-404.html                Page shown for missing addresses
-sections/               Human, Places, Culture, Society (lists fill in automatically)
-articles/               One HTML file per story
-templates/article.html  Copy this to start a new story
-assets/css/tilas.css    All styles. Colors and fonts are at the top, in :root
-assets/js/tilas.js      Builds the section lists and search results
-assets/data/articles.json  The list of all stories (used by sections and search)
-assets/img/             Images: favicon, zellige drawing, your photos
-.nojekyll               Tells GitHub Pages to serve files as they are
+index.html, about.html, share.html, search.html     English pages
+sections/  articles/                                 English sections and stories
+ar/                                                  Arabic site: same pages, same file names, right-to-left
+templates/article.html                               Copy to start a new English story
+ar/templates/article.html                            Copy to start a new Arabic story
+404.html                                             Page shown for missing addresses (both languages)
+assets/css/tilas.css                                 All styles
+assets/js/tilas.js                                   Mobile menu, section lists, search
+assets/data/articles.json                            English story list (sections + search)
+assets/data/articles.ar.json                         Arabic story list
+assets/img/                                          Favicon, zellige drawing, your photos
+.nojekyll                                            Tells GitHub Pages to serve files as they are
 ```
+
+## Languages
+
+Every English page has an Arabic twin with the same file name under `ar/`
+(`articles/my-story.html` ↔ `ar/articles/my-story.html`). The flag switch at the top
+jumps between the two, so always keep the same file name in both languages.
+
+Arabic pages use `dir="rtl"`, the IBM Plex Sans Arabic font and Moroccan month names.
 
 ## Put it online with GitHub Pages
 
-1. Create a new repository on GitHub (for example `tilas`).
-2. Upload the **contents** of this folder (not the folder itself) to the repository, so `index.html` is at the top level.
-3. In the repository, go to **Settings › Pages**. Under "Build and deployment", choose **Deploy from a branch**, branch `main`, folder `/ (root)`, then **Save**.
-4. After a minute the site is live at `https://YOUR-USERNAME.github.io/tilas/`.
+1. Create a repository on GitHub (for example `tilas`).
+2. Upload the **contents** of this folder (not the folder itself), so `index.html` is at the top level.
+3. Go to **Settings › Pages**, choose **Deploy from a branch**, branch `main`, folder `/ (root)`, and save.
+4. The site is live at `https://YOUR-USERNAME.github.io/tilas/` (Arabic at `/tilas/ar/`).
 
-All links are relative, so the site works at that address and on a custom domain later.
-
-One file needs your repository name: open `404.html` and change `<base href="/">` to `<base href="/tilas/">` (use your repository name). If you later use a custom domain, set it back to `/`.
+In `404.html`, change `<base href="/">` to `<base href="/tilas/">` (your repository name).
 
 ## Preview on your computer
-
-Section pages and search load `articles.json`, which browsers block when you double-click a file. Start a small local server instead:
 
 ```
 cd tilas-site
 python3 -m http.server
 ```
 
-Then open http://localhost:8000
+Then open http://localhost:8000. (Section lists and search don't load if you double-click the files.)
 
 ## Publish a new story
 
-1. Copy `templates/article.html` into `articles/` and rename it, for example `articles/a-city-at-the-edge-of-the-atlas.html`.
-2. Fill in every `[bracket]` and delete the optional blocks you don't use.
-3. Add the story to `assets/data/articles.json` (copy an existing entry and change it). It then appears in its section page and in search.
-4. If it should be on the homepage, edit `index.html`.
+1. Copy `templates/article.html` to `articles/your-story.html` and fill in the `[brackets]`.
+2. Copy `ar/templates/article.html` to `ar/articles/your-story.html` (same name) and fill it in Arabic.
+3. Add an entry to `assets/data/articles.json` and to `assets/data/articles.ar.json`.
+   `section` must be `human`, `places`, `culture` or `society`.
+4. To feature it on the homepage, edit `index.html` and `ar/index.html`.
 
-The `section` value in `articles.json` must be exactly `Human`, `Places`, `Culture` or `Society`.
+## Screen sizes
+
+- Phones and tablets (under 1024 px): a menu button opens a full-screen menu.
+- Desktop (1024 px and up): everything on one line at the top.
+- Large monitors (1800 px and up): wider page, larger text, four columns in section lists.
 
 ## Images
 
-Put photos in `assets/img/`. Export them around 1600 px wide as JPEG or WebP to keep pages fast. Replace each grey placeholder (`<div class="ph">…</div>`) with:
-
-```html
-<img src="assets/img/your-photo.jpg" alt="Describe the photo" width="1600" height="1067">
-```
-
-Inside `articles/`, start the path with `../` (`../assets/img/your-photo.jpg`).
+Put photos in `assets/img/` (about 1600–2000 px wide, JPEG or WebP).
+Replace each grey placeholder `<div class="… ph">…</div>` with an `<img>` that has `alt`, `width` and `height`.
 
 ## The share form
 
-GitHub Pages only serves files: it cannot receive form submissions. To receive what people send:
-
-1. Create a form with a form service (Formspree, Basin, Getform or similar).
-2. In `share.html`, replace `https://formspree.io/f/YOUR_FORM_ID` with the address the service gives you.
-3. Check that your plan accepts file uploads. If not, remove the file field from the form.
+GitHub Pages cannot receive form submissions. Create a form with a service (Formspree, Basin, Getform…)
+and replace `https://formspree.io/f/YOUR_FORM_ID` in `share.html` and `ar/share.html`.
+Check that your plan accepts file uploads, or remove the file field.
 
 ## Change the look
 
-Open `assets/css/tilas.css`. Colors and fonts are at the top, under `:root`.
-
-- Text uses the system font: San Francisco on Apple devices, Segoe UI on Windows, Roboto on Android. Nothing to load, so pages are fast.
-- Only the Tifinagh name (ⵜⵉⵍⴰⵙ) loads a web font: Noto Sans Tifinagh, from Google Fonts.
-- Black, white and one light grey (`--panel`) for panels and image backgrounds.
+Colors, fonts and sizes are at the top of `assets/css/tilas.css`, under `:root`.
+Arabic settings are just below, under `html[lang="ar"]`.
 
 ## Before launch
 
-- Write your contact email in `about.html`.
-- Add a sharing image: put `<meta property="og:image" content="https://YOUR-ADDRESS/assets/img/share.jpg">` in each page's `<head>` (it must be a full address).
+- Add your contact email in `about.html` and `ar/about.html`.
 - Replace the sample stories and every `[bracket]`.
+- Add a sharing image: `<meta property="og:image" content="https://YOUR-ADDRESS/assets/img/share.jpg">` in each page's `<head>`.
