@@ -4,11 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TILAS</title>
-<meta name="description" content="تيلاس مجلة ثقافية معاصرة متجذرة في المغرب، منفتحة على أفريقيا والعالم.">
+<meta name="description" content="تيلاس مجلة وثائقية وثقافية مخصّصة للمغرب: تاريخه، وناسه، وأمكنته، وثقافته.">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:site_name" content="TILAS">
 <meta property="og:type" content="website">
 <meta property="og:title" content="TILAS">
-<meta property="og:description" content="تيلاس مجلة ثقافية معاصرة متجذرة في المغرب، منفتحة على أفريقيا والعالم.">
+<meta property="og:description" content="تيلاس مجلة وثائقية وثقافية مخصّصة للمغرب: تاريخه، وناسه، وأمكنته، وثقافته.">
 <meta property="og:locale" content="ar_MA">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
@@ -17,6 +18,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&amp;family=Noto+Sans+Tifinagh&amp;display=swap">
 <link rel="stylesheet" href="../assets/css/tilas.css">
 <script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebSite", "name": "TILAS", "inLanguage": "ar", "description": "تيلاس مجلة وثائقية وثقافية مخصّصة للمغرب: تاريخه، وناسه، وأمكنته، وثقافته."}
+</script>
 </head>
 <body data-root="../">
 <a class="skip" href="#main">انتقل إلى المحتوى</a>
@@ -24,13 +28,12 @@
 <div class="wrap bar">
 <a class="brand" href="../ar/index.html"><span class="brand-tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span><span class="brand-latin" lang="en">TILAS</span></a>
 <nav class="nav" id="site-nav" aria-label="القائمة الرئيسية">
-<ul class="nav-sections">
-<li><a href="../ar/sections/human.html"><span class="nav-name">الإنسان</span><span class="nav-desc">شخصيات وبورتريهات وحوارات.</span></a></li>
-<li><a href="../ar/sections/places.html"><span class="nav-name">الأمكنة</span><span class="nav-desc">مدن وقرى وعمارة ومناظر طبيعية.</span></a></li>
-<li><a href="../ar/sections/culture.html"><span class="nav-name">الثقافة</span><span class="nav-desc">موسيقى وسينما وفن وحِرَف ولغة وطعام.</span></a></li>
-<li><a href="../ar/sections/society.html"><span class="nav-name">المجتمع</span><span class="nav-desc">تعليم وهجرة وعمل وتكنولوجيا وشباب.</span></a></li>
+<ul class="nav-primary">
+<li><a href="../ar/magazine.html"><span class="nav-name">المجلة</span><span class="nav-desc">قصص وبورتريهات وحوارات ومقالات.</span></a></li>
+<li><a href="../ar/mediatheque.html"><span class="nav-name">الخزانة الوسائطية</span><span class="nav-desc">أفلام وثائقية وأفلام وتسجيلات وسلاسل صور.</span></a></li>
+<li><a href="../ar/archives.html"><span class="nav-name">الأرشيف</span><span class="nav-desc">صور ووثائق وملصقات وأغراض وتسجيلات.</span></a></li>
 </ul>
-<ul class="nav-aux">
+<ul class="nav-secondary">
 <li><a href="../ar/share.html">شارك</a></li>
 <li><a href="../ar/about.html">عن تيلاس</a></li>
 <li><a href="../ar/search.html">بحث</a></li>
@@ -38,70 +41,127 @@
 </nav>
 <div class="lang" role="group" aria-label="اللغة">
 <a href="../index.html" hreflang="en" lang="en"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#B22234"/><path d="M0 2.308h30M0 5.385h30M0 8.462h30M0 11.538h30M0 14.615h30M0 17.692h30" stroke="#fff" stroke-width="1.538"/><rect width="12" height="10.769" fill="#3C3B6E"/><g fill="#fff"><circle cx="2" cy="2.2" r=".55"/><circle cx="4.7" cy="2.2" r=".55"/><circle cx="7.4" cy="2.2" r=".55"/><circle cx="10.1" cy="2.2" r=".55"/><circle cx="3.35" cy="5.4" r=".55"/><circle cx="6.05" cy="5.4" r=".55"/><circle cx="8.75" cy="5.4" r=".55"/><circle cx="2" cy="8.6" r=".55"/><circle cx="4.7" cy="8.6" r=".55"/><circle cx="7.4" cy="8.6" r=".55"/><circle cx="10.1" cy="8.6" r=".55"/></g></svg><span class="lang-long">English</span><span class="lang-short" aria-hidden="true">EN</span></a>
-<a href="../ar/index.html" hreflang="ar" lang="ar" aria-current="true"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#C1272D"/><path d="M15 4.5L18.233 14.45L9.769 8.3H20.231L11.767 14.45Z" fill="none" stroke="#006233" stroke-width="1.1" stroke-linejoin="miter"/></svg><span class="lang-long">العربية</span><span class="lang-short" aria-hidden="true">عربي</span></a>
+<a href="../ar/index.html" hreflang="ar" lang="ar" aria-current="true"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#C1272D"/><path d="M15 4.5L18.233 14.45L9.769 8.3H20.231L11.767 14.45Z" fill="none" stroke="#006233" stroke-width="1.1"/></svg><span class="lang-long">العربية</span><span class="lang-short" aria-hidden="true">عربي</span></a>
 </div>
 <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button><span class="menu-icon" aria-hidden="true"><i></i><i></i></span><span class="visually-hidden" data-label-open="القائمة" data-label-close="إغلاق">القائمة</span></button>
 </div>
 </header>
-<main id="main" class="wrap">
+<main id="main">
+<div class="wrap">
 
 <section class="intro">
-<h1 class="statement">مجلة ثقافية متجذرة في المغرب، منفتحة على أفريقيا والعالم.</h1>
+<h1 class="statement">ما الذي يستحق أن يُتذكّر من المغرب؟</h1>
+<p class="statement-sub">مجلة وثائقية وثقافية. أولاً للمغرب، ثم لأفريقيا والعالم.</p>
 </section>
 
-<a class="feature" href="../ar/articles/the-voices-that-changed-a-generation.html">
-<!-- Replace the placeholder with: <img class="feature-media" src="../assets/img/photo.jpg" alt="…" width="1920" height="960" style="width: 100%; object-fit: cover"> -->
-<div class="feature-media ph">[صورة: مجموعة تؤدي عرضاً فوق سطح في الدار البيضاء]</div>
-<div class="feature-text">
-<p class="label">الثقافة</p>
-<h2 class="feature-title">الأصوات التي غيّرت جيلاً</h2>
-<p class="feature-sub">الدار البيضاء في السبعينيات، والمجموعات التي غنّت بلغة الشارع.</p>
+<a class="lead" href="../ar/magazine/the-voices-that-changed-a-generation.html">
+<!-- Lead photo: replace this placeholder with <img class="r-2-1" src="../assets/img/photo.jpg" alt="…" width="2000" height="1000" style="width:100%;object-fit:cover"> -->
+<div class="ph r-2-1">[صورة: مجموعة تؤدي عرضاً فوق سطح في الدار البيضاء]</div>
+<div class="lead-text">
+<p class="label">المجلة · الفنون · قصة</p>
+<h2 class="lead-title">الأصوات التي غيّرت جيلاً</h2>
+<p class="lead-sub">الدار البيضاء في السبعينيات، والمجموعات التي غنّت بلغة الشارع.</p>
+<p class="tile-meta"><span>مدة القراءة 2 دقيقة</span><span class="badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor" stroke="none"/></svg>فيديو</span><span class="badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/></svg>صوت</span></p>
 </div>
 </a>
 
-<section class="block" aria-labelledby="latest">
+<section class="block" aria-labelledby="h-mag">
 <div class="block-head">
-<h2 class="block-title" id="latest">الأحدث</h2>
-<a href="../ar/search.html">كل القصص</a>
+<h2 class="block-title" id="h-mag">المجلة</h2>
+<a href="../ar/magazine.html">كل المجلة</a>
 </div>
 <ul class="grid">
-<li><a class="tile-link" href="../ar/articles/the-geometry-inside-a-zellige-star.html">
-<div class="tile-media drawing"><img src="../assets/img/zellige-16.svg" alt="رسم بنائي لنجمة بستة عشر رأساً مع دوائرها وخطوطها الشعاعية" width="800" height="800" loading="lazy"></div>
-<p class="label">الثقافة</p>
-<h3 class="tile-title">الهندسة داخل نجمة الزليج</h3>
-</a></li>
-<li><a class="tile-link" href="../ar/articles/the-scientist-who-refused-to-be-forgotten.html">
-<div class="tile-media ph">[صورة]</div>
-<p class="label">الإنسان</p>
-<h3 class="tile-title">العالِمة التي رفضت أن تُنسى</h3>
-</a></li>
-<li><a class="tile-link" href="../ar/articles/who-leaves-who-stays.html">
-<div class="tile-media ph">[صورة]</div>
-<p class="label">المجتمع</p>
-<h3 class="tile-title">من يرحل، ومن يبقى</h3>
-</a></li>
+<li><a class="tile-link" href="../ar/magazine/the-geometry-inside-a-zellige-star.html"><div class="tile-media r-4-3 drawing"><img src="../assets/img/zellige-16.svg" alt="" width="800" height="800" loading="lazy"></div><p class="label">التراث · قصة</p><h3 class="tile-title">الهندسة داخل نجمة الزليج</h3><p class="tile-meta"><span>مدة القراءة 2 دقيقة</span></p></a></li>
+<li><a class="tile-link" href="../ar/magazine/the-woman-who-founded-a-university-in-fes.html"><div class="tile-media r-4-3 ph-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/></svg></div><p class="label">الناس · بورتريه</p><h3 class="tile-title">المرأة التي أسست جامعة في فاس</h3><p class="tile-meta"><span>مدة القراءة 2 دقيقة</span></p></a></li>
+<li><a class="tile-link" href="../ar/magazine/a-city-at-the-edge-of-the-atlas.html"><div class="tile-media r-4-3 ph-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/></svg></div><p class="label">الأمكنة · قصة</p><h3 class="tile-title">مدينة على حافة الأطلس</h3><p class="tile-meta"><span>مدة القراءة 2 دقيقة</span><span class="badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor" stroke="none"/></svg>فيديو</span></p></a></li>
 </ul>
 </section>
+</div>
 
-</main>
+<section class="band theme-dark" aria-labelledby="h-med">
+<div class="wrap band-inner">
+<div class="band-head">
+<div>
+<h2 class="band-title" id="h-med">الخزانة الوسائطية</h2>
+<p class="band-text">أفلام وثائقية وأفلام وتسجيلات وسلاسل صور.</p>
+</div>
+<a class="btn" href="../ar/mediatheque.html">افتح الخزانة الوسائطية</a>
+</div>
+<div class="band-row">
+<a class="band-main tile-link" href="../ar/mediatheque/the-rooms-where-the-music-happened.html">
+<div class="tile-media r-16-9 ph-dark"><span class="play play--lg" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 5.5v13l10.5-6.5z" fill="currentColor"/></svg></span><span class="duration">42 دقيقة</span></div>
+<p class="label">وثائقي · 42 دقيقة</p>
+<h3 class="tile-title">القاعات التي صنعت الموسيقى</h3>
+</a>
+<div class="band-side">
+<a class="audio-card" href="../ar/mediatheque/melhoun-explained-in-five-poems.html">
+<span class="play" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 5.5v13l10.5-6.5z" fill="currentColor"/></svg></span>
+<span><span class="label" style="display:block">تسجيل صوتي · 24 دقيقة</span><span class="audio-card-title">الملحون في خمس قصائد</span></span>
+</a>
+<a class="tile-link" href="../ar/mediatheque/fes-workshops.html">
+<div class="tile-media r-16-9 ph-dark"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/></svg></div>
+<p class="label">سلسلة صور · 6 صور</p>
+<h3 class="tile-title">ورشات فاس</h3>
+</a>
+</div>
+</div>
+</div>
+</section>
 
-<section class="panel" aria-labelledby="share-title">
+<div class="wrap">
+<section class="block" aria-labelledby="h-arc" style="padding-top: var(--space)">
+<div class="block-head">
+<h2 class="block-title" id="h-arc">الأرشيف</h2>
+<a href="../ar/archives.html">تصفّح الأرشيف</a>
+</div>
+<div class="featured-archive">
+<a href="../ar/archives/derb-sultan-market-casablanca.html" tabindex="-1" aria-hidden="true"><div class="ph r-3-2">[صورة أرشيفية: السوق في درب السلطان]</div></a>
+<div>
+<p class="label">صورة</p>
+<h3><a href="../ar/archives/derb-sultan-market-casablanca.html">سوق درب السلطان، الدار البيضاء</a></h3>
+<dl class="record" style="margin-top: 24px">
+<dt>التاريخ</dt><dd>حوالي الخمسينيات</dd>
+<dt>المكان</dt><dd>درب السلطان، الدار البيضاء</dd>
+<dt>المصدر</dt><dd>[اسم المجموعة أو العائلة]</dd>
+<dt>المرجع</dt><dd><span class="ref">TIL-A-0001</span></dd>
+</dl>
+<div class="chips">
+<a class="chip" href="../ar/archives.html?type=photo">صور</a>
+<a class="chip" href="../ar/archives.html?type=document">وثائق</a>
+<a class="chip" href="../ar/archives.html?type=poster">ملصقات ومطبوعات</a>
+<a class="chip" href="../ar/archives.html?type=object">أغراض</a>
+<a class="chip" href="../ar/archives.html?type=recording">تسجيلات</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<section class="panel" aria-labelledby="h-share">
 <div class="wrap panel-inner">
 <div>
-<h2 class="panel-title" id="share-title">شاركنا شيئاً للأرشيف</h2>
+<h2 class="panel-title" id="h-share">شاركنا شيئاً للأرشيف</h2>
 <p class="panel-text">صورة، شريط كاسيت، رسالة، ذكرى عن مكان.</p>
 </div>
 <a class="btn" href="../ar/share.html">شارك</a>
 </div>
 </section>
+</main>
 <footer class="site-footer">
-<div class="wrap footer-inner">
-<nav class="footer-nav" aria-label="روابط">
-<a href="../ar/about.html">عن تيلاس</a>
-<a href="../ar/share.html">شارك</a>
-<a href="../ar/search.html">بحث</a>
+<div class="wrap">
+<div class="footer-top">
+<div class="footer-brand">
+<a class="brand" href="../ar/index.html"><span class="brand-tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span><span class="brand-latin" lang="en">TILAS</span></a>
+<p>مجلة وثائقية وثقافية عن المغرب. أولاً للمغرب، ثم لأفريقيا والعالم.</p>
+</div>
+<nav class="footer-cols" aria-label="روابط">
+<div><h2 class="footer-h">استكشف</h2><ul><li><a href="../ar/magazine.html">المجلة</a></li><li><a href="../ar/mediatheque.html">الخزانة الوسائطية</a></li><li><a href="../ar/archives.html">الأرشيف</a></li><li><a href="../ar/search.html">بحث</a></li></ul></div><div><h2 class="footer-h">تيلاس</h2><ul><li><a href="../ar/about.html">عن تيلاس</a></li><li><a href="../ar/share.html">شارك مع الأرشيف</a></li><li><a href="../ar/contact.html">تواصل معنا</a></li></ul></div><div><h2 class="footer-h">قانوني</h2><ul><li><a href="../ar/privacy.html">سياسة الخصوصية</a></li><li><a href="../ar/terms.html">شروط الاستخدام</a></li></ul></div>
 </nav>
-<p class="copy">© 2026 <span lang="en">TILAS</span> <span class="tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span></p>
+</div>
+<div class="footer-bottom">
+<p>© 2026 <span lang="en">TILAS</span> <span class="tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span>. جميع الحقوق محفوظة.</p>
+<p class="footer-langs"><a href="../index.html" hreflang="en" lang="en">English</a><a href="../ar/index.html" hreflang="ar" lang="ar">العربية</a></p>
+</div>
 </div>
 </footer>
 <script src="../assets/js/tilas.js" defer></script>

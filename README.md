@@ -1,41 +1,39 @@
 # TILAS ⵜⵉⵍⴰⵙ
 
-A contemporary cultural magazine rooted in Morocco, open to Africa and the world.
-English and Arabic. Plain HTML, CSS and a little JavaScript. No build step. Works on GitHub Pages as is.
+A documentary and cultural magazine about Morocco. English and Arabic.
+Plain HTML, CSS and a little JavaScript. No build step, no framework. Works on GitHub Pages as is.
 
 ## What's inside
 
 ```
-index.html, about.html, share.html, search.html     English pages
-sections/  articles/                                 English sections and stories
-ar/                                                  Arabic site: same pages, same file names, right-to-left
-templates/article.html                               Copy to start a new English story
-ar/templates/article.html                            Copy to start a new Arabic story
-404.html                                             Page shown for missing addresses (both languages)
-assets/css/tilas.css                                 All styles
-assets/js/tilas.js                                   Mobile menu, section lists, search
-assets/data/articles.json                            English story list (sections + search)
-assets/data/articles.ar.json                         Arabic story list
-assets/img/                                          Favicon, zellige drawing, your photos
-.nojekyll                                            Tells GitHub Pages to serve files as they are
+index.html                 Home
+magazine.html              Magazine: list with Subject and Format filters
+mediatheque.html           Médiathèque (dark): list with Type filter
+archives.html              Archives: list with Type filter
+magazine/  mediatheque/  archives/     One HTML file per piece
+search.html                Searches everything
+share.html                 "Share something for the archive" form
+about.html  contact.html  privacy.html  terms.html
+404.html                   Page shown for missing addresses (both languages)
+ar/                        The Arabic site: same pages, same file names, right to left
+templates/  ar/templates/  Blank pages to copy: story, media, archive item
+assets/css/tilas.css       All styles (colors and fonts at the top)
+assets/js/tilas.js         Menu, filters, search, video and audio players
+assets/data/content.json   List of all English pieces (used by lists and search)
+assets/data/content.ar.json  List of all Arabic pieces
+assets/img/                Images
+assets/media/              Put your MP3 files here
+.nojekyll                  Tells GitHub Pages to serve files as they are
 ```
-
-## Languages
-
-Every English page has an Arabic twin with the same file name under `ar/`
-(`articles/my-story.html` ↔ `ar/articles/my-story.html`). The flag switch at the top
-jumps between the two, so always keep the same file name in both languages.
-
-Arabic pages use `dir="rtl"`, the IBM Plex Sans Arabic font and Moroccan month names.
 
 ## Put it online with GitHub Pages
 
-1. Create a repository on GitHub (for example `tilas`).
+1. Create a repository on GitHub, for example `tilas`.
 2. Upload the **contents** of this folder (not the folder itself), so `index.html` is at the top level.
 3. Go to **Settings › Pages**, choose **Deploy from a branch**, branch `main`, folder `/ (root)`, and save.
-4. The site is live at `https://YOUR-USERNAME.github.io/tilas/` (Arabic at `/tilas/ar/`).
+4. After a minute the site is at `https://YOUR-USERNAME.github.io/tilas/` (Arabic at `/tilas/ar/`).
 
-In `404.html`, change `<base href="/">` to `<base href="/tilas/">` (your repository name).
+In `404.html`, change `<base href="/">` to `<base href="/tilas/">` (your repository name). With a custom domain, set it back to `/`.
 
 ## Preview on your computer
 
@@ -44,26 +42,34 @@ cd tilas-site
 python3 -m http.server
 ```
 
-Then open http://localhost:8000. (Section lists and search don't load if you double-click the files.)
+Open http://localhost:8000. Lists and search don't load if you double-click the files.
 
-## Publish a new story
+## Add a new piece
 
-1. Copy `templates/article.html` to `articles/your-story.html` and fill in the `[brackets]`.
-2. Copy `ar/templates/article.html` to `ar/articles/your-story.html` (same name) and fill it in Arabic.
-3. Add an entry to `assets/data/articles.json` and to `assets/data/articles.ar.json`.
-   `section` must be `human`, `places`, `culture` or `society`.
-4. To feature it on the homepage, edit `index.html` and `ar/index.html`.
+Every piece has an English page and an Arabic page with the **same file name**:
+`magazine/my-story.html` and `ar/magazine/my-story.html`. The flag switch jumps between them.
 
-## Screen sizes
+1. The easiest way: copy an existing piece of the same kind (or a file from `templates/`) and change the text.
+2. Add one entry to `assets/data/content.json` and one to `assets/data/content.ar.json`.
+   Copy an existing entry and change it. Values that must match exactly:
+   - `kind`: `magazine`, `media` or `archive`
+   - `type`: for Magazine `story`, `profile`, `interview`, `essay`; for Médiathèque `documentary`, `video`, `audio`, `photos`; for Archives `photo`, `document`, `poster`, `object`, `recording`
+   - `subject` (Magazine only): `history`, `culture`, `arts`, `people`, `places`, `heritage`
+   - `date`: `YYYY-MM-DD` (lists show the newest first)
+3. To feature it on the Home page, edit `index.html` and `ar/index.html`.
 
-- Phones and tablets (under 1024 px): a menu button opens a full-screen menu.
-- Desktop (1024 px and up): everything on one line at the top.
-- Large monitors (1800 px and up): wider page, larger text, four columns in section lists.
+## Video and audio
+
+- **Video** lives on YouTube or Vimeo. In the page, find `data-video` and put the video ID in `data-id=""`
+  (for YouTube, the part after `watch?v=`). For Vimeo, also set `data-provider="vimeo"`.
+  The video only loads when the reader presses play.
+- **Audio**: put the MP3 in `assets/media/` and add `src="../assets/media/your-file.mp3"` to the `<audio>` tag
+  (`../../assets/…` in Arabic pages). Keep files small; GitHub Pages is not made for large media.
 
 ## Images
 
 Put photos in `assets/img/` (about 1600–2000 px wide, JPEG or WebP).
-Replace each grey placeholder `<div class="… ph">…</div>` with an `<img>` that has `alt`, `width` and `height`.
+Each grey placeholder (`<div class="ph …">[Photo: …]</div>`) has a comment just above it showing the `<img>` to use.
 
 ## The share form
 
@@ -71,13 +77,14 @@ GitHub Pages cannot receive form submissions. Create a form with a service (Form
 and replace `https://formspree.io/f/YOUR_FORM_ID` in `share.html` and `ar/share.html`.
 Check that your plan accepts file uploads, or remove the file field.
 
+## Before launch
+
+- Fill every `[bracket]`: author names, credits, sources, emails, legal name and address.
+- **Privacy policy and Terms of use** are starting templates. Complete them and have them checked by someone qualified for Morocco (law 09-08, CNDP) and, if you have European readers, the GDPR.
+- Name your form service in the privacy policy.
+- Add a sharing image: `<meta property="og:image" content="https://YOUR-ADDRESS/assets/img/share.jpg">` in each page's `<head>`.
+
 ## Change the look
 
 Colors, fonts and sizes are at the top of `assets/css/tilas.css`, under `:root`.
-Arabic settings are just below, under `html[lang="ar"]`.
-
-## Before launch
-
-- Add your contact email in `about.html` and `ar/about.html`.
-- Replace the sample stories and every `[bracket]`.
-- Add a sharing image: `<meta property="og:image" content="https://YOUR-ADDRESS/assets/img/share.jpg">` in each page's `<head>`.
+The dark Médiathèque colors are under `.theme-dark`. Arabic settings are under `html[lang="ar"]`.

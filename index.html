@@ -4,11 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TILAS</title>
-<meta name="description" content="TILAS is a contemporary cultural magazine rooted in Morocco, open to Africa and the world.">
+<meta name="description" content="TILAS is a documentary and cultural magazine dedicated to Morocco: its history, its people, its places and its culture.">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:site_name" content="TILAS">
 <meta property="og:type" content="website">
 <meta property="og:title" content="TILAS">
-<meta property="og:description" content="TILAS is a contemporary cultural magazine rooted in Morocco, open to Africa and the world.">
+<meta property="og:description" content="TILAS is a documentary and cultural magazine dedicated to Morocco: its history, its people, its places and its culture.">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -17,6 +18,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tifinagh&amp;display=swap">
 <link rel="stylesheet" href="assets/css/tilas.css">
 <script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "WebSite", "name": "TILAS", "inLanguage": "en", "description": "TILAS is a documentary and cultural magazine dedicated to Morocco: its history, its people, its places and its culture."}
+</script>
 </head>
 <body data-root="">
 <a class="skip" href="#main">Skip to content</a>
@@ -24,13 +28,12 @@
 <div class="wrap bar">
 <a class="brand" href="index.html"><span class="brand-tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span><span class="brand-latin" lang="en">TILAS</span></a>
 <nav class="nav" id="site-nav" aria-label="Main">
-<ul class="nav-sections">
-<li><a href="sections/human.html"><span class="nav-name">Human</span><span class="nav-desc">People, profiles and interviews.</span></a></li>
-<li><a href="sections/places.html"><span class="nav-name">Places</span><span class="nav-desc">Cities, villages, architecture and landscapes.</span></a></li>
-<li><a href="sections/culture.html"><span class="nav-name">Culture</span><span class="nav-desc">Music, cinema, art, crafts, language and food.</span></a></li>
-<li><a href="sections/society.html"><span class="nav-name">Society</span><span class="nav-desc">Education, migration, work, technology and youth.</span></a></li>
+<ul class="nav-primary">
+<li><a href="magazine.html"><span class="nav-name">Magazine</span><span class="nav-desc">Stories, profiles, interviews and essays.</span></a></li>
+<li><a href="mediatheque.html"><span class="nav-name">Médiathèque</span><span class="nav-desc">Documentaries, films, recordings and photo series.</span></a></li>
+<li><a href="archives.html"><span class="nav-name">Archives</span><span class="nav-desc">Photographs, documents, posters, objects and recordings.</span></a></li>
 </ul>
-<ul class="nav-aux">
+<ul class="nav-secondary">
 <li><a href="share.html">Share</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="search.html">Search</a></li>
@@ -38,70 +41,127 @@
 </nav>
 <div class="lang" role="group" aria-label="Language">
 <a href="index.html" hreflang="en" lang="en" aria-current="true"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#B22234"/><path d="M0 2.308h30M0 5.385h30M0 8.462h30M0 11.538h30M0 14.615h30M0 17.692h30" stroke="#fff" stroke-width="1.538"/><rect width="12" height="10.769" fill="#3C3B6E"/><g fill="#fff"><circle cx="2" cy="2.2" r=".55"/><circle cx="4.7" cy="2.2" r=".55"/><circle cx="7.4" cy="2.2" r=".55"/><circle cx="10.1" cy="2.2" r=".55"/><circle cx="3.35" cy="5.4" r=".55"/><circle cx="6.05" cy="5.4" r=".55"/><circle cx="8.75" cy="5.4" r=".55"/><circle cx="2" cy="8.6" r=".55"/><circle cx="4.7" cy="8.6" r=".55"/><circle cx="7.4" cy="8.6" r=".55"/><circle cx="10.1" cy="8.6" r=".55"/></g></svg><span class="lang-long">English</span><span class="lang-short" aria-hidden="true">EN</span></a>
-<a href="ar/index.html" hreflang="ar" lang="ar"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#C1272D"/><path d="M15 4.5L18.233 14.45L9.769 8.3H20.231L11.767 14.45Z" fill="none" stroke="#006233" stroke-width="1.1" stroke-linejoin="miter"/></svg><span class="lang-long">العربية</span><span class="lang-short" aria-hidden="true">عربي</span></a>
+<a href="ar/index.html" hreflang="ar" lang="ar"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#C1272D"/><path d="M15 4.5L18.233 14.45L9.769 8.3H20.231L11.767 14.45Z" fill="none" stroke="#006233" stroke-width="1.1"/></svg><span class="lang-long">العربية</span><span class="lang-short" aria-hidden="true">عربي</span></a>
 </div>
 <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button><span class="menu-icon" aria-hidden="true"><i></i><i></i></span><span class="visually-hidden" data-label-open="Menu" data-label-close="Close">Menu</span></button>
 </div>
 </header>
-<main id="main" class="wrap">
+<main id="main">
+<div class="wrap">
 
 <section class="intro">
-<h1 class="statement">A cultural magazine rooted in Morocco, open to Africa and the world.</h1>
+<h1 class="statement">What is worth remembering about Morocco?</h1>
+<p class="statement-sub">A documentary and cultural magazine. First for Morocco, then for Africa and the world.</p>
 </section>
 
-<a class="feature" href="articles/the-voices-that-changed-a-generation.html">
-<!-- Replace the placeholder with: <img class="feature-media" src="assets/img/photo.jpg" alt="…" width="1920" height="960" style="width: 100%; object-fit: cover"> -->
-<div class="feature-media ph">[Photo: a group performing on a rooftop in Casablanca]</div>
-<div class="feature-text">
-<p class="label">Culture</p>
-<h2 class="feature-title">The Voices That Changed a Generation</h2>
-<p class="feature-sub">Casablanca in the 1970s, and the groups that sang in the language of the street.</p>
+<a class="lead" href="magazine/the-voices-that-changed-a-generation.html">
+<!-- Lead photo: replace this placeholder with <img class="r-2-1" src="assets/img/photo.jpg" alt="…" width="2000" height="1000" style="width:100%;object-fit:cover"> -->
+<div class="ph r-2-1">[Photo: a group performing on a rooftop in Casablanca]</div>
+<div class="lead-text">
+<p class="label">Magazine · Arts · Story</p>
+<h2 class="lead-title">The Voices That Changed a Generation</h2>
+<p class="lead-sub">Casablanca in the 1970s, and the groups that sang in the language of the street.</p>
+<p class="tile-meta"><span>2 min read</span><span class="badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor" stroke="none"/></svg>Video</span><span class="badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/></svg>Audio</span></p>
 </div>
 </a>
 
-<section class="block" aria-labelledby="latest">
+<section class="block" aria-labelledby="h-mag">
 <div class="block-head">
-<h2 class="block-title" id="latest">Latest</h2>
-<a href="search.html">All stories</a>
+<h2 class="block-title" id="h-mag">Magazine</h2>
+<a href="magazine.html">All of the Magazine</a>
 </div>
 <ul class="grid">
-<li><a class="tile-link" href="articles/the-geometry-inside-a-zellige-star.html">
-<div class="tile-media drawing"><img src="assets/img/zellige-16.svg" alt="Construction drawing of a sixteen-point star with its guide circles and radial lines" width="800" height="800" loading="lazy"></div>
-<p class="label">Culture</p>
-<h3 class="tile-title">The Geometry Inside a Zellige Star</h3>
-</a></li>
-<li><a class="tile-link" href="articles/the-scientist-who-refused-to-be-forgotten.html">
-<div class="tile-media ph">[Photo]</div>
-<p class="label">Human</p>
-<h3 class="tile-title">The Scientist Who Refused to Be Forgotten</h3>
-</a></li>
-<li><a class="tile-link" href="articles/who-leaves-who-stays.html">
-<div class="tile-media ph">[Photo]</div>
-<p class="label">Society</p>
-<h3 class="tile-title">Who Leaves, Who Stays</h3>
-</a></li>
+<li><a class="tile-link" href="magazine/the-geometry-inside-a-zellige-star.html"><div class="tile-media r-4-3 drawing"><img src="assets/img/zellige-16.svg" alt="" width="800" height="800" loading="lazy"></div><p class="label">Heritage · Story</p><h3 class="tile-title">The Geometry Inside a Zellige Star</h3><p class="tile-meta"><span>2 min read</span></p></a></li>
+<li><a class="tile-link" href="magazine/the-woman-who-founded-a-university-in-fes.html"><div class="tile-media r-4-3 ph-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/></svg></div><p class="label">People · Profile</p><h3 class="tile-title">The Woman Who Founded a University in Fès</h3><p class="tile-meta"><span>2 min read</span></p></a></li>
+<li><a class="tile-link" href="magazine/a-city-at-the-edge-of-the-atlas.html"><div class="tile-media r-4-3 ph-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/></svg></div><p class="label">Places · Story</p><h3 class="tile-title">A City at the Edge of the Atlas</h3><p class="tile-meta"><span>2 min read</span><span class="badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor" stroke="none"/></svg>Video</span></p></a></li>
 </ul>
 </section>
+</div>
 
-</main>
+<section class="band theme-dark" aria-labelledby="h-med">
+<div class="wrap band-inner">
+<div class="band-head">
+<div>
+<h2 class="band-title" id="h-med">Médiathèque</h2>
+<p class="band-text">Documentaries, films, recordings and photo series.</p>
+</div>
+<a class="btn" href="mediatheque.html">Open the Médiathèque</a>
+</div>
+<div class="band-row">
+<a class="band-main tile-link" href="mediatheque/the-rooms-where-the-music-happened.html">
+<div class="tile-media r-16-9 ph-dark"><span class="play play--lg" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 5.5v13l10.5-6.5z" fill="currentColor"/></svg></span><span class="duration">42 min</span></div>
+<p class="label">Documentary · 42 min</p>
+<h3 class="tile-title">The Rooms Where the Music Happened</h3>
+</a>
+<div class="band-side">
+<a class="audio-card" href="mediatheque/melhoun-explained-in-five-poems.html">
+<span class="play" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 5.5v13l10.5-6.5z" fill="currentColor"/></svg></span>
+<span><span class="label" style="display:block">Audio · 24 min</span><span class="audio-card-title">Melhoun, Explained in Five Poems</span></span>
+</a>
+<a class="tile-link" href="mediatheque/fes-workshops.html">
+<div class="tile-media r-16-9 ph-dark"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/></svg></div>
+<p class="label">Photo series · 6 photos</p>
+<h3 class="tile-title">Fès Workshops</h3>
+</a>
+</div>
+</div>
+</div>
+</section>
 
-<section class="panel" aria-labelledby="share-title">
+<div class="wrap">
+<section class="block" aria-labelledby="h-arc" style="padding-top: var(--space)">
+<div class="block-head">
+<h2 class="block-title" id="h-arc">Archives</h2>
+<a href="archives.html">Browse the archives</a>
+</div>
+<div class="featured-archive">
+<a href="archives/derb-sultan-market-casablanca.html" tabindex="-1" aria-hidden="true"><div class="ph r-3-2">[Archive photograph: the market at Derb Sultan]</div></a>
+<div>
+<p class="label">Photograph</p>
+<h3><a href="archives/derb-sultan-market-casablanca.html">Derb Sultan market, Casablanca</a></h3>
+<dl class="record" style="margin-top: 24px">
+<dt>Date</dt><dd>c. 1950s</dd>
+<dt>Place</dt><dd>Derb Sultan, Casablanca</dd>
+<dt>Source</dt><dd>[Collection or family name]</dd>
+<dt>Reference</dt><dd><span class="ref">TIL-A-0001</span></dd>
+</dl>
+<div class="chips">
+<a class="chip" href="archives.html?type=photo">Photographs</a>
+<a class="chip" href="archives.html?type=document">Documents</a>
+<a class="chip" href="archives.html?type=poster">Posters &amp; prints</a>
+<a class="chip" href="archives.html?type=object">Objects</a>
+<a class="chip" href="archives.html?type=recording">Recordings</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<section class="panel" aria-labelledby="h-share">
 <div class="wrap panel-inner">
 <div>
-<h2 class="panel-title" id="share-title">Share something for the archive</h2>
+<h2 class="panel-title" id="h-share">Share something for the archive</h2>
 <p class="panel-text">A photo, a cassette, a letter, a memory of a place.</p>
 </div>
 <a class="btn" href="share.html">Share something</a>
 </div>
 </section>
+</main>
 <footer class="site-footer">
-<div class="wrap footer-inner">
-<nav class="footer-nav" aria-label="Footer">
-<a href="about.html">About</a>
-<a href="share.html">Share</a>
-<a href="search.html">Search</a>
+<div class="wrap">
+<div class="footer-top">
+<div class="footer-brand">
+<a class="brand" href="index.html"><span class="brand-tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span><span class="brand-latin" lang="en">TILAS</span></a>
+<p>A documentary and cultural magazine about Morocco. First for Morocco, then for Africa and the world.</p>
+</div>
+<nav class="footer-cols" aria-label="Footer">
+<div><h2 class="footer-h">Explore</h2><ul><li><a href="magazine.html">Magazine</a></li><li><a href="mediatheque.html">Médiathèque</a></li><li><a href="archives.html">Archives</a></li><li><a href="search.html">Search</a></li></ul></div><div><h2 class="footer-h">TILAS</h2><ul><li><a href="about.html">About</a></li><li><a href="share.html">Share with the archive</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><h2 class="footer-h">Legal</h2><ul><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of use</a></li></ul></div>
 </nav>
-<p class="copy">© 2026 <span lang="en">TILAS</span> <span class="tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span></p>
+</div>
+<div class="footer-bottom">
+<p>© 2026 <span lang="en">TILAS</span> <span class="tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span>. All rights reserved.</p>
+<p class="footer-langs"><a href="index.html" hreflang="en" lang="en">English</a><a href="ar/index.html" hreflang="ar" lang="ar">العربية</a></p>
+</div>
 </div>
 </footer>
 <script src="assets/js/tilas.js" defer></script>

@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Search | TILAS</title>
 <meta name="description" content="Search TILAS">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:site_name" content="TILAS">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Search | TILAS">
@@ -24,13 +25,12 @@
 <div class="wrap bar">
 <a class="brand" href="index.html"><span class="brand-tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span><span class="brand-latin" lang="en">TILAS</span></a>
 <nav class="nav" id="site-nav" aria-label="Main">
-<ul class="nav-sections">
-<li><a href="sections/human.html"><span class="nav-name">Human</span><span class="nav-desc">People, profiles and interviews.</span></a></li>
-<li><a href="sections/places.html"><span class="nav-name">Places</span><span class="nav-desc">Cities, villages, architecture and landscapes.</span></a></li>
-<li><a href="sections/culture.html"><span class="nav-name">Culture</span><span class="nav-desc">Music, cinema, art, crafts, language and food.</span></a></li>
-<li><a href="sections/society.html"><span class="nav-name">Society</span><span class="nav-desc">Education, migration, work, technology and youth.</span></a></li>
+<ul class="nav-primary">
+<li><a href="magazine.html"><span class="nav-name">Magazine</span><span class="nav-desc">Stories, profiles, interviews and essays.</span></a></li>
+<li><a href="mediatheque.html"><span class="nav-name">Médiathèque</span><span class="nav-desc">Documentaries, films, recordings and photo series.</span></a></li>
+<li><a href="archives.html"><span class="nav-name">Archives</span><span class="nav-desc">Photographs, documents, posters, objects and recordings.</span></a></li>
 </ul>
-<ul class="nav-aux">
+<ul class="nav-secondary">
 <li><a href="share.html">Share</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="search.html" aria-current="page">Search</a></li>
@@ -38,36 +38,45 @@
 </nav>
 <div class="lang" role="group" aria-label="Language">
 <a href="search.html" hreflang="en" lang="en" aria-current="true"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#B22234"/><path d="M0 2.308h30M0 5.385h30M0 8.462h30M0 11.538h30M0 14.615h30M0 17.692h30" stroke="#fff" stroke-width="1.538"/><rect width="12" height="10.769" fill="#3C3B6E"/><g fill="#fff"><circle cx="2" cy="2.2" r=".55"/><circle cx="4.7" cy="2.2" r=".55"/><circle cx="7.4" cy="2.2" r=".55"/><circle cx="10.1" cy="2.2" r=".55"/><circle cx="3.35" cy="5.4" r=".55"/><circle cx="6.05" cy="5.4" r=".55"/><circle cx="8.75" cy="5.4" r=".55"/><circle cx="2" cy="8.6" r=".55"/><circle cx="4.7" cy="8.6" r=".55"/><circle cx="7.4" cy="8.6" r=".55"/><circle cx="10.1" cy="8.6" r=".55"/></g></svg><span class="lang-long">English</span><span class="lang-short" aria-hidden="true">EN</span></a>
-<a href="ar/search.html" hreflang="ar" lang="ar"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#C1272D"/><path d="M15 4.5L18.233 14.45L9.769 8.3H20.231L11.767 14.45Z" fill="none" stroke="#006233" stroke-width="1.1" stroke-linejoin="miter"/></svg><span class="lang-long">العربية</span><span class="lang-short" aria-hidden="true">عربي</span></a>
+<a href="ar/search.html" hreflang="ar" lang="ar"><svg class="flag" viewBox="0 0 30 20" aria-hidden="true"><rect width="30" height="20" fill="#C1272D"/><path d="M15 4.5L18.233 14.45L9.769 8.3H20.231L11.767 14.45Z" fill="none" stroke="#006233" stroke-width="1.1"/></svg><span class="lang-long">العربية</span><span class="lang-short" aria-hidden="true">عربي</span></a>
 </div>
 <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button><span class="menu-icon" aria-hidden="true"><i></i><i></i></span><span class="visually-hidden" data-label-open="Menu" data-label-close="Close">Menu</span></button>
 </div>
 </header>
-<main id="main" class="wrap">
+<main id="main">
+<div class="wrap">
 <header class="page-head">
 <h1 class="page-title">Search</h1>
 </header>
 <form class="search-bar" role="search" action="search.html" method="get" data-search-form>
 <label class="visually-hidden" for="q">Search TILAS</label>
-<input id="q" name="q" type="search" placeholder="A name, a city, a decade" autocomplete="off" data-query>
+<input id="q" name="q" type="search" placeholder="A name, a city, a craft, a decade" autocomplete="off" data-query>
 <button class="btn" type="submit">Search</button>
 </form>
-<p class="search-status" data-status aria-live="polite"></p>
-<section class="block" aria-label="Results">
-<ul class="grid" data-list="search" data-src="assets/data/articles.json" data-empty="No stories in this section yet." data-error="Stories could not be loaded. To preview on your computer, start a local server (see README)." data-results="Results" data-noresults="No results for “{q}”.">
+<p class="count" data-count aria-live="polite"></p>
+<div class="list-end">
+<ul class="grid" data-list="search" data-src="assets/data/content.json" data-l-empty="Nothing here yet for this filter." data-l-error="Content could not be loaded. To preview on your computer, start a local server (see README)." data-l-count-one="1 item" data-l-count-many="{n} items" data-l-video="Video" data-l-audio="Audio" data-l-none="No results for “{q}”.">
 <li class="empty">Loading…</li>
 </ul>
 <noscript><p class="empty">Search needs JavaScript.</p></noscript>
-</section>
+</div>
+</div>
 </main>
 <footer class="site-footer">
-<div class="wrap footer-inner">
-<nav class="footer-nav" aria-label="Footer">
-<a href="about.html">About</a>
-<a href="share.html">Share</a>
-<a href="search.html">Search</a>
+<div class="wrap">
+<div class="footer-top">
+<div class="footer-brand">
+<a class="brand" href="index.html"><span class="brand-tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span><span class="brand-latin" lang="en">TILAS</span></a>
+<p>A documentary and cultural magazine about Morocco. First for Morocco, then for Africa and the world.</p>
+</div>
+<nav class="footer-cols" aria-label="Footer">
+<div><h2 class="footer-h">Explore</h2><ul><li><a href="magazine.html">Magazine</a></li><li><a href="mediatheque.html">Médiathèque</a></li><li><a href="archives.html">Archives</a></li><li><a href="search.html">Search</a></li></ul></div><div><h2 class="footer-h">TILAS</h2><ul><li><a href="about.html">About</a></li><li><a href="share.html">Share with the archive</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><h2 class="footer-h">Legal</h2><ul><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of use</a></li></ul></div>
 </nav>
-<p class="copy">© 2026 <span lang="en">TILAS</span> <span class="tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span></p>
+</div>
+<div class="footer-bottom">
+<p>© 2026 <span lang="en">TILAS</span> <span class="tfng" lang="zgh">ⵜⵉⵍⴰⵙ</span>. All rights reserved.</p>
+<p class="footer-langs"><a href="search.html" hreflang="en" lang="en">English</a><a href="ar/search.html" hreflang="ar" lang="ar">العربية</a></p>
+</div>
 </div>
 </footer>
 <script src="assets/js/tilas.js" defer></script>
